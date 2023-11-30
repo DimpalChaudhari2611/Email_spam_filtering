@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email with Spam Detection CSS</title>
+</head>
+<body>
+
+<!-- Visible content for users -->
+<div>
+    <p>Welcome to our newsletter! This is visible content.</p>
+</div>
+
+<!-- Hidden content for potential spam detection -->
+<div style="display:none; font-size:0; color:#ffffff;">
+    <p>This text is hidden to prevent spam filters from detecting certain keywords.</p>
+</div>
+
+</body>
+</html>
