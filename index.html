@@ -1,0 +1,33 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Spam Filtering</title>
+</head>
+<body>
+  <h1>Email Spam Filtering</h1>
+  
+  <form id="emailForm">
+    <label for="emailInput">Enter an email:</label><br>
+    <textarea id="emailInput" name="email" rows="4" cols="50"></textarea><br>
+    <button type="button" onclick="classifyEmail()">Classify</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function classifyEmail() {
+      // Get the input text
+      var emailText = document.getElementById("emailInput").value;
+
+      // Send the email text to the backend (Python) for classification
+      // This part will typically involve using JavaScript to make an API request to your Python backend
+      
+      // For demonstration purposes, displaying a placeholder result
+      var resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = "<strong>Result:</strong> This email is classified as <em>spam</em>.";
+    }
+  </script>
+</body>
+</html>
